@@ -33,9 +33,6 @@ jobs:
         run: |
           pip install --upgrade pip setuptools cython buildozer
 
-      - name: Initialize Buildozer
-        run: buildozer init
-
       - name: Build APK
         run: yes | buildozer -v android debug
 
